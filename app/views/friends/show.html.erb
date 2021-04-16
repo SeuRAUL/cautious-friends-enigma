@@ -2,9 +2,9 @@
   <h1 class="display-4"> <%= @friend.first_name %> <%= @friend.last_name %> </h1>
 
   <p class="lead">
-    <i class="far fa-envelope"></i> <%= @friend.email %> |
-    <i class="fas fa-phone-alt"></i> <%= @friend.phone %> |
-    <i class="fab fa-twitter"></i> <%= @friend.twitter %> 
+    <%= icon('far', 'envelope', class:"me-2")  + " " + @friend.email %> <br/>
+    <%= icon('fas', 'phone-alt', class:"me-2") + " " + @friend.phone %> <br/>
+    <%= icon('fab', 'twitter', class:"me-2")   + " " + @friend.twitter %> 
   </p>
 
 </div>
